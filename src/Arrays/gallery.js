@@ -1,21 +1,24 @@
+import suzuki1 from '../Assets/suzuki1.jpg';
+import suzuki2 from '../Assets/suzuki2.jpg';
+import suzuki3 from '../Assets/suzuki3.jpg';
 const gallery = [
     {
-        src: 'https://picsum.photos/1080/530/?random',
+        src: suzuki1,
         altText: 'Slide 1',
-        header: 'Watch the beautiful world',
-        caption: 'Image'
+        header: 'Gsxr 600 2009',
+        caption: 'Suzuki'
       },
       {
-        src: 'https://picsum.photos/1079/530/?random',
+        src: suzuki2,
         altText: 'Slide 2',
-        header: 'Oh! It is red ',
-        caption: 'Image?'
+        header: 'Gsxr 600 2010',
+        caption: 'Suzuki'
       },
       {
-        src: 'https://picsum.photos/1081/530/?random',
+        src: suzuki3,
         altText: 'Slide 3',
-        header: 'No sir, we do not that here',
-        caption: 'Yeah'
+        header: 'Gsxr 600 2008',
+        caption: 'Suzuki'
       }
 ];
 

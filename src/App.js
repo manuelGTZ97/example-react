@@ -9,12 +9,17 @@ import Information from './Layouts/Information';
 class App extends Component {
   render() {
     return (
-      <div>
+      <Container style={margin}>
       <NavBar /> 
       <Information />
-      </div>
+      </Container>
     );
   }
+}
+
+const margin = {
+  margin: '0',
+  'max-width': '100%'
 }
 
 export default App;

@@ -38,6 +38,4 @@ export default class NavBar extends React.Component{
 
 const marginNavaBar = {
     margin: '0 5px 0 5px',
-
-
 }
