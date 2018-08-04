@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 //import { Link } from 'react-router';
 import Detail from '../Layouts/Detail';
-import { BrowserRouter as Router, Route, Link } from "react-router";
+import Information from '../Layouts/Information';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { NavLink as RRNavLink } from 'react-router-dom';
 
 import App from '../App';
 export default class NavBar extends React.Component{
@@ -22,29 +24,34 @@ export default class NavBar extends React.Component{
       }
       render() {
         return (
-            /*<Navbar color="faded" light style ={marginNavaBar}>
+          <Router>
+            <Navbar color="faded" light style ={marginNavaBar}>
               <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink tag={Link} to="/test">Information</NavLink>
+                    <NavLink  tag={Link} to="/Information">Information</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                    <NavLink tag={Link} to="/Detail">Detail</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>
-            </Navbar>*/
+              <Route path="/Information" component={Information} />
+              <Route path="/Detail" component={Detail} />
+            </Navbar>
+            
+            </Router>
           //<div>sfds</div>
-          <Router>
+          /*<Router>
     <div>
       <ul>
         <li>
-          <Link to="../Layouts/Detail">Home</Link>
+          <Link to="/Detail">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/Information">About</Link>
         </li>
         <li>
           <Link to="/topics">Topics</Link>
@@ -53,10 +60,10 @@ export default class NavBar extends React.Component{
 
       <hr />
 
-      <Route  path="../Layouts/Detail" component={Detail} />
-      <Route path="/about" component={About} />
+      <Route  path="/Detail" component={Detail} />
+      <Route path="/Information" component={Information} />
     </div>
-  </Router>
+  </Router>*/
         );
       }
     }

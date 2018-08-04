@@ -10,9 +10,7 @@ class App extends Component {
   render() {
     return (
       <Container style={margin}>
-      <NavBar /> 
-      <Information />
-
+      <NavBar />
       </Container>
     );
   }
