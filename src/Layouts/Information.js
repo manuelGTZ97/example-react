@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col,ListGroup,ListGroupItem } from 'reactstrap';
+import { Container, Row, Col,ListGroup,ListGroupItem, Card, CardImg,
+         CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import Gallery from '../CssComponents/Gallery';
 import gallery from '../Arrays/gallery';
 
@@ -47,6 +48,44 @@ export default class Information extends Component{
                     </ListGroup>
                 </Col>
             </Row>
+            <Row style={parallax}> 
+                <h3 style={center}>Diseñado por Suzuki</h3>
+            </Row>
+            <Row> 
+                <Col>
+                    <Card>
+                        <CardImg top width="100%" src="http://www.onlinemotos.net/wp-content/uploads/2017/04/imagegallery-12420-57f39eff558cc.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                <Button>Button</Button>
+                        </CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
+                        <CardImg top width="100%" src="https://media2.cycleonline.com.au/wp-content/uploads/2017/01/2017-suzuki-gsx-r750-1.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                <Button>Button</Button>
+                        </CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
+                        <CardImg top width="100%" src="https://static.turbosquid.com/Preview/2014/07/03__23_36_52/suzuki%20gsxr600%202011%201.jpgd994ea71-4b38-4b37-8386-6c44a99a4964Original.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                <Button>Button</Button>
+                        </CardBody>
+                    </Card>
+                </Col>
+            </Row>
         </div>
         );
     }
@@ -60,6 +99,22 @@ const middeImage = {
     'display': 'block',
     'margin-left': 'auto',
     'margin-right': 'auto'
+};
+
+const parallax = {
+    'background-image': 'url("https://amazingpict.com/wp-content/uploads/2014/03/Suzuki-Logo-Wallpaper-for-Free.jpg")',
+    'min-height': '500px',
+    'background-attachment': 'fixed',
+    'background-position': 'center',
+    'background-repeat': 'no-repeat',
+    'background-size': 'cover',
+    'align-items': 'center',
+    'display': 'flex',
+    'justify-content' : 'center'
+};
+
+const center = {
+    'color': 'white'
 };
 
 const small = 'https://cdn1.louis.de/content/bikedb/images/bikes/fotos/350x350/1731.png';

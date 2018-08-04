@@ -12,6 +12,7 @@ class App extends Component {
       <Container style={margin}>
       <NavBar /> 
       <Information />
+
       </Container>
     );
   }
