@@ -1,24 +1,24 @@
-import suzuki1 from '../Assets/suzuki1.jpg';
-import suzuki2 from '../Assets/suzuki2.jpg';
-import suzuki3 from '../Assets/suzuki3.jpg';
+import yamaha1 from '../Assets/yamaha1.jpg';
+import yamaha2 from '../Assets/yamaha2.jpg';
+import yamaha3 from '../Assets/yamaha3.jpg';
 const gallery = [
     {
-        src: suzuki1,
-        altText: 'Slide 1',
-        header: 'Gsxr 600 2009',
-        caption: 'Suzuki'
+        src: yamaha1,
+        altText: 'yamahaVR',
+        header: 'Valentino Rossi',
+        caption: '46'
       },
       {
-        src: suzuki2,
-        altText: 'Slide 2',
-        header: 'Gsxr 600 2010',
-        caption: 'Suzuki'
+        src: yamaha2,
+        altText: 'r6',
+        header: 'R6 2018',
+        caption: 'New R6'
       },
       {
-        src: suzuki3,
-        altText: 'Slide 3',
-        header: 'Gsxr 600 2008',
-        caption: 'Suzuki'
+        src: yamaha3,
+        altText: 'R1',
+        header: 'R1M on Circuit',
+        caption: 'R1M'
       }
 ];
 

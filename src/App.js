@@ -4,20 +4,19 @@ import NavBar from './CssComponents/NavBar';
 import Gallery from './CssComponents/Gallery';
 import gallery from './Arrays/gallery';
 import { Container, Row, Col } from 'reactstrap';
-import Information from './Layouts/Information';
+import Information from './Layouts/Home';
 
 class App extends Component {
   render() {
     return (
       <Container style={margin}>
-      <NavBar />
+          <NavBar />
       </Container>
     );
   }
 }
 
 const margin = {
-  margin: '0',
   'max-width': '100%'
 }
 
