@@ -26,7 +26,7 @@ export default class History extends Component{
 //Componentes pequeños que realizan la funcion del body del AlertComponent
 //Recibirá como parametro props y props.NOMBREDELOBJETO.NOMBREDELAPROPIEDADDELOBJETO
 const Title = props => <h4 className="alert-heading"> {props.historyArray.title} </h4>;
-const Body = props => <p> {props.historyArray.body} </p>
+const Body = props => <p> {props.historyArray.body} </p>;
 const imageResponsive = props => <img src={props.historyArray.small} alt="prueba"/>;
 
 //Componente que engloba los dos componentes pequeños

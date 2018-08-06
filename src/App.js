@@ -9,9 +9,7 @@ import Information from './Layouts/Home';
 class App extends Component {
   render() {
     return (
-      <Container style={margin}>
-          <NavBar />
-      </Container>
+        <NavBar />
     );
   }
 }
