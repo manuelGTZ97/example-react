@@ -10,13 +10,13 @@ export default class History extends Component{
             <Row style={margin}>
                 <Col>
                 {/*Al momento de llamar el componente padre, se llama el nombre del props que es el objeto y se llama el array de objetos que seria el json*/}
-                    <AlertComponent historyArray={historyArray[0]} />
-                    <AlertComponent historyArray={historyArray[1]} />
+                    <AlertComponent historyArray={historyArray[0]} color={historyArray[0].color}/>
+                    <AlertComponent historyArray={historyArray[1]} color={historyArray[1].color}/>
                 </Col>
                 <Col style={colParent}> <img style={middleImage} src={historyArray[4].small} onLoad={this.onLoad} /></Col>
                 <Col>
-                    <AlertComponent historyArray={historyArray[2]} />
-                    <AlertComponent historyArray={historyArray[3]} />
+                    <AlertComponent historyArray={historyArray[2]} color={historyArray[2].color}/>
+                    <AlertComponent historyArray={historyArray[3]} color={historyArray[3].color}/>
                 </Col>
             </Row>
         );
@@ -35,7 +35,7 @@ const imageResponsive = props => <img src={props.historyArray.small} alt="prueba
 //Cuando se llama a los componentes pequeños se declara que objeto será NOMBREDELOBJETO={props.NOMBREDELOBJETODELOSCOMPONENTESPEQUEÑOS}
 const AlertComponent = props => {
     return(
-        <Alert color="primary">
+        <Alert color={props.historyArray.color}>
             <Title historyArray={props.historyArray}/>
             <Body historyArray={props.historyArray}/>
         </Alert>
@@ -58,3 +58,17 @@ const middleImage = {
 const margin ={
     'margin-top' : '20px'
 };
+
+
+
+/*function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  
+  const element = <Welcome name="Sara" />;
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );*/
+  
+  

@@ -15,6 +15,7 @@ export default class Information extends Component{
             <Gallery items={gallery}/>
             <History/>
             <Parallax/>
+            {/*TODO: Realizar siguiente seccion de todos los modelos, carousel de tres componentes */}
         </div>
         );
     }
