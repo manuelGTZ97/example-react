@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Gallery from '../CssComponents/Gallery';
 import gallery from '../Arrays/gallery';
 import History from '../CssComponents/History';
+import Parallax from '../CssComponents/Parallax';
 
 export default class Information extends Component{
     constructor(props){
@@ -10,10 +11,11 @@ export default class Information extends Component{
     }
     render(){
         return(
-        <Row style={margin}>
+        <div style={margin}>
             <Gallery items={gallery}/>
-            <History />
-        </Row>
+            <History/>
+            <Parallax/>
+        </div>
         );
     }
 }

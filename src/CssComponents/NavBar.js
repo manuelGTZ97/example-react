@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Container, Row, Col, Alert  } from 'reactstrap';
 import Home from '../Layouts/Home';
+import Detail from '../Layouts/Detail';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 export default class NavBar extends React.Component {
@@ -22,7 +23,7 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <Router>
-        <Container>
+        <div>
           <Navbar color="faded" light>
             <NavbarBrand href="/" className="mr-auto">Yamaha</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
@@ -32,7 +33,7 @@ export default class NavBar extends React.Component {
                   <NavLink tag={Link} to="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/Information">Information</NavLink>
+                  <NavLink tag={Link} to="/Detail">Detail</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink tag={Link} to="/Models">Models</NavLink>
@@ -42,9 +43,11 @@ export default class NavBar extends React.Component {
           </Navbar>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/Detail" component={Detail} />
           </Switch>
-        </Container>
+        </div>
       </Router>
     );
   }
 }
+

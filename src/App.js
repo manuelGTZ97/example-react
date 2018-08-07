@@ -9,12 +9,13 @@ import Information from './Layouts/Home';
 class App extends Component {
   render() {
     return (
-        <NavBar />
+      <Container style={width}>
+          <NavBar />
+      </Container>
     );
   }
 }
-
-const margin = {
+const width = {
   'max-width': '100%'
 }
 
