@@ -4,6 +4,7 @@ import Gallery from '../CssComponents/Gallery';
 import gallery from '../Arrays/gallery';
 import History from '../CssComponents/History';
 import Parallax from '../CssComponents/Parallax';
+import CardDetail from '../CssComponents/CardDetail';
 
 export default class Information extends Component{
     constructor(props){
@@ -12,10 +13,10 @@ export default class Information extends Component{
     render(){
         return(
         <div style={margin}>
-            <Gallery items={gallery}/>
-            <History/>
-            <Parallax/>
-            {/*TODO: Realizar siguiente seccion de todos los modelos, carousel de tres componentes */}
+            <Gallery items={gallery} />
+            <History />
+            <Parallax />
+            <CardDetail />
         </div>
         );
     }

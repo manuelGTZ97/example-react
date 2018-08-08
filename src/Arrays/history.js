@@ -2,17 +2,17 @@ const history = [
     {
         title : 'Yamaha Corporation',
         body : 'A Japanese multinational corporation and conglomerate with a very wide range of products and services, predominantly musical instruments, electronics and power sports equipment.',
-        color : 'primary'
+        color : 'dark'
     },
     {
         title : 'Year',
         body : 'Nippon Gakki Co. Ltd. (currently Yamaha Corporation) was established in 1887 as a piano and reed organ manufacturer by Torakusu Yamaha in Hamamatsu',
-        color : 'success'
+        color : 'primary'
     },
     {
         title : 'Corporate mission',
         body : 'Japanese word used by Yamaha to describe their corporate mission. Kandō in translation describes the sensation of profound excitement and gratification derived from experiencing supreme quality and performance.',
-        color : 'danger'
+        color : 'secondary'
     },
 
     {
