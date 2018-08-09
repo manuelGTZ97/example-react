@@ -17,7 +17,7 @@ function Footer() {
                 </ul>
             </Col>
             <Col  lg="4" sm="12" style={centerImage}>
-                <Button color="primary" size="lg" >More Info</Button>{' '}
+                <Button color="primary" size="lg" href="/Detail">More Info</Button>{' '}
             </Col>
         </Row>
     );
@@ -40,6 +40,7 @@ const list = {
 
 const background = {
     'background-color': 'rgb(41, 41, 41)',
-    'color': 'white'
+    'color': 'white',
+    'margin-top': '20px'
 };
 export default Footer;
