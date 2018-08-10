@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './CssComponents/NavBar';
-import Gallery from './CssComponents/Gallery';
-import gallery from './Arrays/gallery';
-import { Container, Row, Col } from 'reactstrap';
-import Footer from './CssComponents/Footer';
+import Home from './Layouts/Home';
+import Detail from './Layouts/Detail';
+import Layout from './Layouts/Layout';
+import NotFound from './Layouts/NotFound';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <Container style={width}>
-          <NavBar />
-          <Footer />
-      </Container>
+      <Router>
+        <Layout>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Models" component={Detail} />
+            <Route  component={NotFound}/>
+          </Switch>
+        </Layout>
+      </Router>
     );
   }
-}
-const width = {
-  'max-width': '100%'
 }
 
 export default App;

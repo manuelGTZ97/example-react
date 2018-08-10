@@ -17,7 +17,7 @@ function Footer() {
                 </ul>
             </Col>
             <Col  lg="4" sm="12" style={centerImage}>
-                <Button color="primary" size="lg" href="/Detail">More Info</Button>{' '}
+                <Button color="primary" size="lg" href="/Models">More Info</Button>{' '}
             </Col>
         </Row>
     );

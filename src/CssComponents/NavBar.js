@@ -22,8 +22,6 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <Router>
-        <div>
           <Navbar color="faded" light>
             <NavbarBrand href="/" className="mr-auto">Yamaha</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
@@ -33,20 +31,11 @@ export default class NavBar extends React.Component {
                   <NavLink tag={Link} to="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/Detail">Detail</NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink tag={Link} to="/Models">Models</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/Detail" component={Detail} />
-          </Switch>
-        </div>
-      </Router>
     );
   }
 }

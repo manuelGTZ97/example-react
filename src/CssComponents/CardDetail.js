@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,CardSubtitle, CardBody } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import cardsArray from '../Arrays/cards';
+
 export default class CardDetail extends Component {
     render() {
         return (
