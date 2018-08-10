@@ -13,6 +13,7 @@ export default class ModalExample extends Component {
 
   toggle() {
     this.setState({
+      //False o true dependiendo del estado en el que este
       modal: !this.state.modal
     });
   }
