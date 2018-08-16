@@ -14,7 +14,7 @@ export default class NavBar extends React.Component {
       collapsed: true
     };
   }
-//Comentario develop
+//Comentario develop a master
   toggleNavbar() {
     this.setState({
       collapsed: !this.state.collapsed
