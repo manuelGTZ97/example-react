@@ -26,6 +26,7 @@ export default class Models extends Component {
 //Commit
 //bug 123
 //fix
+//bug
 const ImgModel = props => {
     const { url } = props;
     return (
