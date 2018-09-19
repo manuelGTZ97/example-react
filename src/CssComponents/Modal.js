@@ -14,6 +14,7 @@ export default class ModalExample extends Component {
   toggle() {
     this.setState({
       //False o true dependiendo del estado en el que este
+      //Commit develop
       modal: !this.state.modal
     });
   }
