@@ -41,4 +41,4 @@ export default class NavBar extends React.Component {
 }
 
 //Write my first feature in git flow
-//First relaese
+//First relaese 1.0.0
